@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rgTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_blue_light">
+        <RadioButton
+            android:id="@+id/rbTab1"
+            android:text="Tab1"
+            android:checked="true"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbTab2"
+            android:text="Tab2"
+            android:checked="false"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Details(left)"
+        android:id="@+id/btnDetailsLeft"
+        android:layout_gravity="start"
+        android:visibility="visible"
+        android:enabled="true"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Details(right)"
+        android:id="@+id/btnDetailsRight"
+        android:layout_gravity="end"
+        android:visibility="invisible"
+        android:enabled="false"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flTabFragmentBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:text="LEFT TAB TEXT"
+        android:gravity="center"
+        android:id="@+id/tvTabFragmentCenterText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:textSize="30dp"
+        />
+
+    </FrameLayout>
+</LinearLayout>
