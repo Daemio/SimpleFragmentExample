@@ -11,23 +11,30 @@
         android:background="@android:color/holo_blue_light">
         <RadioButton
             android:id="@+id/rbTab1"
-            android:text="Tab1"
+            android:text="LEFT TAB"
             android:checked="true"
+            android:gravity="center"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="50dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/tab_left"/>
         <RadioButton
             android:id="@+id/rbTab2"
-            android:text="Tab2"
+            android:text="RIGHT TAB"
+            android:gravity="center"
             android:checked="false"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="50dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/tab_right"/>
     </RadioGroup>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
