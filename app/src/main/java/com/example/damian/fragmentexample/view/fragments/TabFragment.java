@@ -1,6 +1,7 @@
 package com.example.damian.fragmentexample.view.fragments;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -58,6 +59,16 @@ public class TabFragment extends Fragment {
                         return;
                 }
 
+                //to avoid multiple
+                FragmentManager manager = getActivity().getFragmentManager();
+                int count = manager.getBackStackEntryCount();
+                if(count>2){
+                    while(count>2){
+                        manager.popBackStack();
+                        count--;
+                    }
+                }
+                //
                 ((MainActivity) getActivity()).getTransitManager().switchFragment(R.id.flTabFragmentBody, fragment, args, true);
 
             }

@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:button="@android:color/transparent"
-            android:background="@drawable/tab_left"/>
+            android:background="@drawable/tab_selector"/>
         <RadioButton
             android:id="@+id/rbTab2"
             android:text="RIGHT TAB"
@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:button="@android:color/transparent"
-            android:background="@drawable/tab_right"/>
+            android:background="@drawable/tab_selector"/>
     </RadioGroup>
     <LinearLayout
         android:orientation="horizontal"

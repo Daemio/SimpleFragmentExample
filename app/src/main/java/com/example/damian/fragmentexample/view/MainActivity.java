@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         int count = getFragmentManager().getBackStackEntryCount();
 
+        /*
         if (count == 1) {
             super.onBackPressed();
         } else {
@@ -53,6 +54,13 @@ public class MainActivity extends AppCompatActivity {
                     count--;
                 }
             }
+        }
+        */
+
+        if (count == 1) {
+            super.onBackPressed();
+        }else {
+            getFragmentManager().popBackStack();
         }
 
 
